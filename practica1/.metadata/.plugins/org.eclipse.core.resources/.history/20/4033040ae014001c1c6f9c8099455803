@@ -1,0 +1,32 @@
+package ar.edu.unlp.info.oo1.ejercicio5;
+import java.time.LocalDate;
+
+public class Mamifero {
+	private String identificador;
+	private String especie;
+	private LocalDate fechaNacimiento;
+	
+	public String getIdentificador(){
+		return this.identificador;
+	}
+	public void setIdentificador(String id){
+		this.identificador=id;
+	}
+	
+	public String getEspecie() {
+		return especie;
+	}
+	public void setEspecie(String especie) {
+		this.especie=especie;
+	}
+	
+	public LocalDate getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+	public void setFechaNacimiento(LocalDate fecha) {
+		this.fechaNacimiento=fecha;
+	}
+	
+	
+	
+}

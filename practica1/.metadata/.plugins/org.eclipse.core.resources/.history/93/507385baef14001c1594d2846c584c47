@@ -1,0 +1,13 @@
+package ar.edu.unlp.info.oo1.ejercicio6;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Farola {
+	private boolean estado;
+	private List<Farola> farolas = new arrayList<>();
+	
+	public Farola(){
+		this.estado=false;
+	}
+	
+}

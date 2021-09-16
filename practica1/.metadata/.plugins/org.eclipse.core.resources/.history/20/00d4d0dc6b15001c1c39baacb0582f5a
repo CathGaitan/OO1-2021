@@ -1,0 +1,32 @@
+package ar.edu.unlp.info.oo1.ejercicio6;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Farola {
+	private boolean estado;
+	private List<Farola> farolas;
+	
+	public Farola(){
+		this.estado=false;
+		farolas= new ArrayList<>();
+	}
+	
+	public void pairWithNeighbor(Farola otraFarola){
+		this.farolas.add(otraFarola);
+		//otraFarola.pairWithNeighbor(this);
+	}
+	
+	public List<Farola> getNeighbors(){
+		return this.farolas;
+	}
+	
+	public boolean isOn(){
+		return estado;
+	}
+	
+	public void turnOn(){
+		if(!this.isOn()){
+			this.farolas.stream().forEach(farola -> farola.);
+		}
+	}
+}

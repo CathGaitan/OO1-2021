@@ -1,0 +1,13 @@
+Tarea B: Reflexione, charle con el ayudante y responda a las siguientes preguntas.
+1. ¿Por qué cree que este ejercicio se llama "Cuenta con ganchos"? 
+2. En las implementaciones de los métodos extraer() y transferirACuenta()  que se ven en el diagrama, ¿quién es this? ¿Puede decir de qué clase es this?
+3. ¿Por qué decidimos que los métodos puedeExtraer() y extraerSinControlar tengan visibilidad "protegido"?
+4. ¿Se puede transferir de una caja de ahorro a una cuenta corriente y viceversa? ¿por qué? Pruébelo!
+5. ¿Cómo se declara en Java un método abstracto? ¿Es obligatorio implementarlos? ¿Qué dice el compilador de Java si una subclase no implementa un método abstracto que hereda?
+
+1. 
+2. En los metodos de las superClase abstracta al poner this, se refiere a la clase que la implementa. CuentaAhorro o CuentaCorriente respectivamente, dependiendo
+el tipo del objeto que llame al metodo
+3. Que los metodos sean protected significa que solo la clase, el package y las subclases pueden acceder a esos metodos. Uno no puede ir a otra clase que no sea
+subclase de Cuenta y hacer mensaje.puedeExtraer();
+4.

@@ -40,20 +40,14 @@ public class Farola {
 		this.turn(false);
 	}
 	
-	private void setEstado(boolean estado){
-		this.estado=estado;
-	}
-	
-	private void changeState(boolean nuevoEstado, Farola farola){
-		if(nuevoEstado != farola.isOn()){
-			farola.setEstado(nuevoEstado);
-		}
+	private void setEstado(boolean nuevoEstado){
+		this.estado=nuevoEstado;
 	}
 	
 	private void turn(boolean nuevoEstado){
 		if(nuevoEstado != this.isOn()){
-			this.changeState(nuevoEstado, this);
-			this.farolas.stream().forEach(farola -> farola.changeState(nuevoEstado, farola));
+			this.setEstado(nuevoEstado);
+			
 		}
 	}
 	

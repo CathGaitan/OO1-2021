@@ -30,11 +30,10 @@ public class DateLapse2 {
 	}
 	
 	public boolean includesDate(LocalDate other){
-		LocalDate to=this.from.plusDays(this.sizeInDays());
 		if((other.isAfter(this.from)) &&
 				(other.isBefore(this.from.plusDays(this.sizeInDays()))) ||
-				(other.compareTo(this.from)==0) ||
-				(other.compareTo(to)==0)) return true;
+				(other.equals(this.from)) ||
+				(other.equals(this.getTo()))) return true;
 		return false;
 	}
 }

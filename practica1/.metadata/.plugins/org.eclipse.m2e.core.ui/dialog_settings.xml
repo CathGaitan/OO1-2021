@@ -22,6 +22,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Cath\Desktop\Facultad\2do anio\SegundoCuatri\OO1\Practica\practica1\ejercicio6"/>
 			<item value="G:\Otros ordenadores\PcTolosa\Facultad\2do anio\SegundoCuatri\OO1\Practica\practica1\ejercicio13\src\main\java\ar\edu\unlp\info\oo1\ejercicio13\Archivo.java"/>
 			<item value="G:\Otros ordenadores\PcTolosa\Facultad\2do anio\SegundoCuatri\OO1\Practica\practica1\ejercicio11\src\main\java\ar\edu\unlp\info\oo1\ejercicio11\Inversor.java"/>
 			<item value="G:\Otros ordenadores\PcTolosa\Facultad\2do anio\SegundoCuatri\OO1\Practica\practica1\ejercicio10"/>
@@ -54,6 +55,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ejercicio17"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio15"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio14"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio13"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio12"/>
@@ -63,6 +66,8 @@
 			<item value="ar.edu.unlp.info.oo1"/>
 		</list>
 		<list key="artifactId">
+			<item value="ejercicio17"/>
+			<item value="ejercicio15"/>
 			<item value="ejercicio14"/>
 			<item value="ejercicio13"/>
 			<item value="ejercicio12"/>
@@ -114,5 +119,11 @@
 			<item value=""/>
 			<item value="https://github.com/unlp-info-objetos/oo1-2021/blob/main/objetos-uno-archetype-0.0.1-"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="720"/>
+		<item key="y" value="166"/>
 	</section>
 </section>

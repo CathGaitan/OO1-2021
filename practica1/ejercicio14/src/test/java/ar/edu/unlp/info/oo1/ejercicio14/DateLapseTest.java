@@ -36,4 +36,18 @@ public class DateLapseTest {
 		assertTrue(lapso3.includesDate(diezAtras));
 		assertTrue(lapso3.includesDate(diezAdelante));
 	}
+	
+	@Test
+	public void overlapseTest(){
+		DateLapse lapso1= new DateLapse(LocalDate.of(2020,10,10),LocalDate.of(2020,10,20));
+		DateLapse lapso2= new DateLapse(LocalDate.of(2020,10,9),LocalDate.of(2020,10,30));
+		DateLapse lapso3= new DateLapse(LocalDate.of(2020,10,20),LocalDate.of(2020,10,30));
+		DateLapse lapso4= new DateLapse(LocalDate.of(2020,11,01),LocalDate.of(2020,11,15));
+		DateLapse lapso5= new DateLapse(LocalDate.of(2020,10,10),LocalDate.of(2020,10,15));
+		assertTrue(lapso1.overlaps(lapso2));
+		assertTrue(lapso1.overlaps(lapso3)); //devuelve true si hay dos fechas iguales
+		assertFalse(lapso1.overlaps(lapso4));
+		assertTrue(lapso1.overlaps(lapso5));
+		
+	}
 }
